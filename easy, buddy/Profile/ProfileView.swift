@@ -82,7 +82,9 @@ struct ProfileView: View {
                     HStack {
                         CustomTagProfile(text: "\(profile.programType)")
                         CustomTagProfile(text: "\(profile.faculty)")
+                        Spacer()
                     }
+                    .frame(width:326)
                     HStack {
                         VStack (alignment: .leading) {
                             CustomTagProfile(text: "\(profile.programType)")
