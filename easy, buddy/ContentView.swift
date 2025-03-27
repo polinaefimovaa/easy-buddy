@@ -5,8 +5,8 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var favoritesManager = FavoritesManager()
     @ObservedObject var viewModel: ViewModel
-    @State private var email: String = "student_0@edu.hse.ru"
-    @State private var password: String = "password"
+    @State private var email: String = ""
+    @State private var password: String = ""
     @State private var selectedTab: Tab = .students
     @State private var isSignUpPresented = false
     @Namespace private var animation

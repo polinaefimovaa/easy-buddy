@@ -86,9 +86,6 @@ struct StudentView: View {
                 
                 VStack(alignment: .leading, spacing: 8) {
                     H4(text: "\(student.firstName) \(student.lastName)")
-                    p(text: "\(student.email ?? "")")
-                        .font(.custom("TTHoves-Medium", size: 14))
-                        .foregroundColor(.greyscale500)
                     pTabs(text: "\(student.languages.replacingOccurrences(of: ", ", with: " / "))")
                         .padding(.top, 8)
                     
